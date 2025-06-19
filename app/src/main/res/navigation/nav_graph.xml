@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.ticketing.WelcomeFragment"
+        android:label="WelcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_staffLoginFragment"
+            app:destination="@id/staffLoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.ticketing.RegistrationFragment"
+        android:label="RegistrationFragment"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_registrationFragment_to_queueResultFragment"
+            app:destination="@id/queueResultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/queueResultFragment"
+        android:name="com.example.ticketing.QueueResultFragment"
+        android:label="QueueResultFragment"
+        tools:layout="@layout/fragment_queue_result">
+        <action
+            android:id="@+id/action_queueResultFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_queueResultFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="queueId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/staffLoginFragment"
+        android:name="com.example.ticketing.StaffLoginFragment"
+        android:label="StaffLoginFragment"
+        tools:layout="@layout/fragment_staff_login">
+        <action
+            android:id="@+id/action_staffLoginFragment_to_staffDashboardFragment"
+            app:destination="@id/staffDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/staffDashboardFragment"
+        android:name="com.example.ticketing.StaffDashboardFragment"
+        android:label="StaffDashboardFragment"
+        tools:layout="@layout/fragment_staff_dashboard">
+        <action
+            android:id="@+id/action_staffDashboardFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation> 

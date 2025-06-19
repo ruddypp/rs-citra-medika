@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Rumah Sakit Citra Medika</string>
+    <!-- User Flow Strings -->
+    <string name="hospital_name">RUMAH SAKIT\nCITRA MEDIKA</string>
+    <string name="get_started">Get Started</string>
+    <string name="queue_number_registration">Pengambilan Nomor Antrian</string>
+    <string name="nik_hint">Nomor NIK</string>
+    <string name="name_hint">Nama Lengkap</string>
+    <string name="select_poly">Pilih Poli</string>
+    <string name="need_hint">Kebutuhan</string>
+    <string name="get_queue_number">Ambil No Antrian</string>
+    <string name="your_queue_number">Nomor Antrian Anda</string>
+    <string name="number">Nomor:</string>
+    <string name="name">Nama:</string>
+    <string name="poly">Poli:</string>
+    <string name="need">Kebutuhan:</string>
+    <string name="get_number_again">Ambil No Lagi</string>
+    <string name="finish">Selesai</string>
+    
+    <!-- Staff Flow Strings -->
+    <string name="staff_dashboard">Dashboard Staff</string>
+    <string name="general_poly">Poli Umum</string>
+    <string name="dental_poly">Poli Gigi</string>
+    <string name="kia_poly">Poli KIA</string>
+    <string name="status">Status:</string>
+    <string name="waiting">Menunggu</string>
+    <string name="called">Dipanggil</string>
+    <string name="call">Panggil</string>
+    <string name="done">Selesai</string>
+    <string name="cancel">Batal</string>
+    <string name="staff_login">Login Staff</string>
+    <string name="pin_hint">Masukkan PIN</string>
+    <string name="login">Login</string>
+    <string name="pin_error">PIN salah</string>
+</resources>
