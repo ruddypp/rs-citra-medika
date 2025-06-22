@@ -92,4 +92,4 @@ Beberapa ide untuk pengembangan aplikasi di masa depan:
 
 ## Lisensi
 
-© 2023 Aplikasi Sistem Antrian Rumah Sakit. All rights reserved. 
+© 2025 Aplikasi Sistem Antrian Rumah Sakit. All rights reserved. 
